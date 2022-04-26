@@ -1,34 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"
+/>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilos.css" type="text/css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    <div>
-        <input type="text" id="num1">+
-        <input type="text" id="num2">=
-        <input type="text" id="suma">
-        <input type="buton" id="sumar" onclick="sumar()">
-
+    <div class="container">
+    <div id="calculadora" class="row">
+        <div class="col-12">
+            <input type="text" id="solucion" >
+        </div>
+        <div class="col-3">
+            
+        </div>
+        <div class="col-3">
+            
+        </div>
+        <div class="col-3">
+            <input type="button" id=".C" value="C" class="botones" >
+        </div>
+        <div class="col-3">
+            <input type="button" id="dividir" value="/" class="botones" >
+        </div>
+        <div class="col-3">
+            <input type="button" id=".7"  value="7" class="botones" >
+        </div>
+        <div class="col-3">
+            <input type="button" id=".8" value="8" class="botones" >
+        </div>
+        <div class="col-3">
+            <input type="button" id=".9" value="9" class="botones" >
+        </div>
+        <div class="col-3">
+            <input type="button" id=".x" value="X" class="botones">
+        </div>
+        <div class="col-3">
+            <input type="button" id=".4" value="4" class="botones">
+        </div>
+        <div class="col-3">
+            <input type="button" id=".5" value="5" class="botones">
+        </div>
+        <div class="col-3">
+            <input type="button" id=".6" value="6" class="botones">
+        </div>
+        <div class="col-3">
+            <input type="button" id=".-" value="-" class="botones">
+        </div>
+        <div class="col-3">
+            <input type="button" id=".1"  value="1" class="botones" >
+        </div>
+        <div class="col-3">
+            <input type="button" id=".2"  value="2" class="botones" >
+        </div>
+        <div class="col-3">
+            <input type="button" id=".3"  value="3" class="botones" >
+        </div>
+        <div class="col-3">
+            <input type="button" id=".+"  value="+" class="botones">
+        </div>
+        <div class="col-3">
+            <input type="button" class="botones" >
+        </div>
+        <div class="col-3">
+            <input type="button" id=".0"  value="0" class="botones" >
+        </div>
+        <div class="col-3">
+            <input type="button" id=".,"  value="," class="botones" >
+        </div>
+        <div class="col-3">
+            <input type="button" id=".="  value="=" class="botones" >
+        </div>
     </div>
+</div>
     <script type="text/javascript"> 
         function sumar(){
             var num1 = document.getElementById("num1").innerText;
-            sdfasff
             var num2 = document.getElementById("num2").innerText;
-            console.log(num2)
-            var suma = Number(num1)+Number(num2);
-            console.log(suma)
+            var suma = Number(num1)+Number(num2);          
             document.getElementById('suma').value=suma;
-        
-
-            
         }
-
-
     </script>
 
 
